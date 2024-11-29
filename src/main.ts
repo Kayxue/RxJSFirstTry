@@ -29,7 +29,7 @@ fromEvent(startButton, "click").subscribe(() => {
 			currentCounterLabel.innerHTML = data.toString();
 		},
 		error: (message) => {
-			statusLabel.innerHTML = `Error: ${message}`;
+			statusLabel.innerHTML = `Error -> ${message}`;
 		},
 		complete() {
 			statusLabel.innerHTML = `Completed`;
